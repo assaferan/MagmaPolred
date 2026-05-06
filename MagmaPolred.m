@@ -38,7 +38,7 @@ intrinsic Polred(f::RngUPolElt : Best:="dynamic") -> RngUPolElt, SeqEnum, BoolEl
   end try;
   vprint Polred, 1 : "Polred done.";
   return Parent(f) ! sspol, ssroot, true;
-end intrinsic
+end intrinsic;
 
 intrinsic Polredabs(f::RngUPolElt) -> RngUPolElt, SeqEnum, BoolElt
   { A smallest generating polynomial of the number field, using polredabs in pari. }
